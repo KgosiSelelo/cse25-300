@@ -1,0 +1,105 @@
+/* General Page Styling */
+body {
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                url('backgroud.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* Sticky footer fix */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+/* Header */
+h1 {
+    background-color: #002147;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #004080;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Main Content */
+.container {
+    padding: 20px;
+}
+
+/* Buttons */
+button, input[type="submit"] {
+    background-color: #004080;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #002147;
+}
+
+/* Forms */
+input,
+textarea,
+select {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/* Cards (sections) */
+.card {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Star Rating */
+.star-rating {
+    font-size: 40px;
+    color: gray;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.star-rating span:hover {
+    color: gold;
+}
+
+/* Footer */
+footer {
+    background-color: #002147;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
