@@ -1,17 +1,53 @@
 <!DOCTYPE html>
-<html>
-     <html lang="en">
+<html lang="en">
 <head>
-     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Contact Us section — matches the screenshot */
+        .contact-section {
+            background-color: #cdd8e3; /* light blue-grey from screenshot */
+            padding: 40px 30px;
+        }
+
+        .contact-section h2 {
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 24px;
+        }
+
+        .contact-card {
+            background-color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            padding: 16px 20px;
+            display: inline-block;
+            min-width: 200px;
+            margin-right: 16px;
+        }
+
+        .contact-card .label {
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #888;
+            margin-bottom: 6px;
+        }
+
+        .contact-card .value {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+    </style>
 </head>
 <body style="background-image: url('backgroud.jpg'); background-size: cover; background-position: center; display: flex; flex-direction: column; min-height: 100vh; margin: 0;">
 
     <h1 style="color: aliceblue;">KMS LOANS ENTERPRISE</h1>
-
     <nav>
         <a href="index.html">Home</a> |
         <a href="apply.html">Apply for Loan</a> |
@@ -20,36 +56,36 @@
         <a href="contact.html">Contact</a> |
         <a href="feedback.html">Feedback</a>
     </nav>
-
     <hr>
 
-    <!-- PAGE CONTENT — flex:1 pushes footer to bottom -->
-    <div style="flex: 1; padding: 20px;">
-
+    <!-- Contact Us section styled like the screenshot -->
+    <div class="contact-section">
         <h2>Contact Us</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 16px;">
+            <div class="contact-card">
+                <div class="label">Phone</div>
+                <div class="value">+267 77 908 917</div>
+            </div>
+            <div class="contact-card">
+                <div class="label">Email</div>
+                <div class="value">info@kmsloans.com</div>
+            </div>
+        </div>
+    </div>
 
-        <p>Phone: +26777908917</p>
-        <p>Email: kmsloansenterprise@gmail.com</p>
-
+    <!-- Rest of your page -->
+    <div style="flex: 1; padding: 20px;">
         <h3>Send a Message</h3>
-
         <form id="contactForm">
-
             <label>Name:</label>
             <input type="text" id="contactName" placeholder="Enter your name">
-
             <label>Email:</label>
             <input type="email" id="contactEmail" placeholder="Enter your email">
-
             <label>Message:</label>
             <textarea rows="5" id="message" placeholder="Write your message here..."></textarea>
-
             <br><br>
-
             <input type="submit" value="Send Message" onclick="sendMessage(); return false;">
-
         </form>
-
     </div>
 
     <footer>
@@ -58,9 +94,7 @@
         <p>&copy; 2026 KMS LOANS ENTERPRISE. All Rights Reserved</p>
     </footer>
 
-    <!-- Scripts at the bottom, before closing body tag -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-
 </body>
 </html>
