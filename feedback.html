@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+     <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-
-    <h1>KMS LOANS ENTERPRISE</h1>
-
+<body style="background-image: url('backgroud.jpg'); background-size: cover; background-position: center; display: flex; flex-direction: column; min-height: 100vh; margin: 0;">
+    <h1 style="color: aliceblue;">KMS LOANS ENTERPRISE</h1>
     <nav>
         <a href="index.html">Home</a> |
         <a href="apply.html">Apply for Loan</a> |
@@ -19,17 +18,12 @@
         <a href="contact.html">Contact</a> |
         <a href="feedback.html">Feedback</a>
     </nav>
-
     <hr>
-
     <!-- PAGE CONTENT — flex:1 pushes footer to bottom -->
-    <div class="page-content">
-
+    <div style="flex: 1; padding: 20px;">
         <h2>Feedback</h2>
-
-        <form id="feedbackForm">
-
-            <label class="form-label">Rating:</label>
+        <form>
+            <label>Rating:</label>
             <div class="star-rating">
                 <span onclick="rate(1)">★</span>
                 <span onclick="rate(2)">★</span>
@@ -37,39 +31,20 @@
                 <span onclick="rate(4)">★</span>
                 <span onclick="rate(5)">★</span>
             </div>
-
             <p id="rating-value"></p>
-
-            <label class="form-label" for="comments">Comments:</label>
-            <textarea
-                class="form-control"
-                rows="5"
-                id="comments"
-                placeholder="Write your comments here...">
-            </textarea>
-
-            <br>
-
-            <button
-                type="button"
-                class="btn btn-primary"
-                onclick="submitFeedback()">
-                Submit Feedback
-            </button>
-
+            <label>Comments:</label>
+            <textarea rows="5" cols="30" id="comments" placeholder="Write your comments here..."></textarea>
+            <br><br>
+            <input type="submit" value="Submit Feedback">
         </form>
-
     </div>
-
     <footer>
         <p>Contact: +26777908917</p>
         <p>Email: kmsloansenterprise@gmail.com</p>
         <p>&copy; 2026 KMS LOANS ENTERPRISE. All Rights Reserved</p>
     </footer>
-
     <!-- Scripts at the bottom, before closing body tag -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-
 </body>
 </html>
